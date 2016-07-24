@@ -30,5 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.tabs.executeScript(null, {file: "scripts/draft.js"});
   }, false);
 
+  var bds = document.getElementById('draftS');
+  bds.addEventListener('click', function() {
+    chrome.tabs.executeScript(null, {file: "scripts/draftS.js"});
+  }, false);
+
 
 }, false);
